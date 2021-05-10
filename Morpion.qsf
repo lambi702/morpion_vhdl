@@ -83,3 +83,5 @@ set_location_assignment PIN_19 -to hor
 set_location_assignment PIN_20 -to green_led
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
 set_location_assignment PIN_21 -to red_led
+set_location_assignment PIN_12 -to compteur1
+set_location_assignment PIN_13 -to compteur2

@@ -74,8 +74,8 @@ VCCINT                       : 8         : power  :                   : 1.8V    
 RESERVED_INPUT               : 9         :        :                   :         : 1         :                
 RESERVED_INPUT               : 10        :        :                   :         : 1         :                
 RESERVED_INPUT               : 11        :        :                   :         : 1         :                
-RESERVED_INPUT               : 12        :        :                   :         : 1         :                
-RESERVED_INPUT               : 13        :        :                   :         : 1         :                
+compteur1                    : 12        : output : 3.3-V LVTTL       :         : 1         : Y              
+compteur2                    : 13        : output : 3.3-V LVTTL       :         : 1         : Y              
 TMS                          : 14        : input  :                   :         : 1         :                
 TDI                          : 15        : input  :                   :         : 1         :                
 TCK                          : 16        : input  :                   :         : 1         :                
