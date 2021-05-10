@@ -73,7 +73,7 @@ clk                          : 7         : input  : 3.3-V LVTTL       :         
 VCCINT                       : 8         : power  :                   : 1.8V    :           :                
 RESERVED_INPUT               : 9         :        :                   :         : 1         :                
 RESERVED_INPUT               : 10        :        :                   :         : 1         :                
-lastPlay                     : 11        : output : 3.3-V LVTTL       :         : 1         : N              
+RESERVED_INPUT               : 11        :        :                   :         : 1         :                
 RESERVED_INPUT               : 12        :        :                   :         : 1         :                
 RESERVED_INPUT               : 13        :        :                   :         : 1         :                
 TMS                          : 14        : input  :                   :         : 1         :                
@@ -81,13 +81,13 @@ TDI                          : 15        : input  :                   :         
 TCK                          : 16        : input  :                   :         : 1         :                
 TDO                          : 17        : output :                   :         : 1         :                
 RESERVED_INPUT               : 18        :        :                   :         : 1         :                
-RESERVED_INPUT               : 19        :        :                   :         : 1         :                
+hor                          : 19        : input  : 3.3-V LVTTL       :         : 1         : Y              
 green_led                    : 20        : output : 3.3-V LVTTL       :         : 1         : Y              
-RESERVED_INPUT               : 21        :        :                   :         : 1         :                
+red_led                      : 21        : output : 3.3-V LVTTL       :         : 1         : Y              
 rst                          : 22        : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 23        : power  :                   : 3.3V    : 1         :                
 ver                          : 24        : input  : 3.3-V LVTTL       :         : 1         : Y              
-hor                          : 25        : input  : 3.3-V LVTTL       :         : 1         : Y              
+RESERVED_INPUT               : 25        :        :                   :         : 1         :                
 play                         : 26        : input  : 3.3-V LVTTL       :         : 1         : Y              
 RESERVED_INPUT               : 27        :        :                   :         : 1         :                
 RESERVED_INPUT               : 28        :        :                   :         : 1         :                

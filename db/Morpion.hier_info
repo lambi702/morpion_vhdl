@@ -1,4 +1,8 @@
 |Morpion
+clk => lastHor.CLK
+clk => red_led~reg0.CLK
+clk => lastPlay.CLK
+clk => green_led~reg0.CLK
 clk => row_count[0].CLK
 clk => row_count[1].CLK
 clk => row_count[2].CLK
@@ -12,9 +16,10 @@ clk => clk_count[6].CLK
 clk => clk_count[7].CLK
 clk => clk_count[8].CLK
 rst => ~NO_FANOUT~
-play => green_led~reg0.CLK
-lastPlay << <GND>
-hor => ~NO_FANOUT~
+play => lastPlay.DATAIN
+play => process_2.IN1
+hor => lastHor.DATAIN
+hor => process_3.IN1
 ver => ~NO_FANOUT~
 colr[5] <= <GND>
 colr[4] <= <GND>
@@ -34,5 +39,6 @@ row[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 row[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 row[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 green_led << green_led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+red_led << red_led~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
