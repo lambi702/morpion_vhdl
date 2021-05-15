@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "05/10/2021 19:23:56"
+-- DATE "05/15/2021 21:52:42"
 
 -- 
 -- Device: Altera 5M160ZE64C4 Package EQFP64
@@ -39,13 +39,13 @@ ENTITY 	morpion IS
 	play : IN std_logic;
 	hor : IN std_logic;
 	ver : IN std_logic;
-	colr : BUFFER std_logic_vector(1 TO 5);
-	colg : BUFFER std_logic_vector(1 TO 5);
-	row : BUFFER std_logic_vector(1 TO 7);
+	colr : OUT std_logic_vector(1 TO 5);
+	colg : OUT std_logic_vector(1 TO 5);
+	row : OUT std_logic_vector(1 TO 7);
 	green_led : BUFFER std_logic;
 	red_led : BUFFER std_logic;
-	compteur1 : BUFFER std_logic;
-	compteur2 : BUFFER std_logic
+	compteur1 : OUT std_logic;
+	compteur2 : OUT std_logic
 	);
 END morpion;
 

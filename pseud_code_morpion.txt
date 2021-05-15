@@ -1,0 +1,146 @@
+
+//process pour faire defiler les rangees de la matrice de led 
+liste de sensibilité : clk 
+while clk = 0 and clk'last_value = 1  //faire une rotation tous les 3 fronts montants d'horloge de la rangee de la matrice de led a allumer
+    if clk_count = 2 
+        clk_count = 0 
+        if row_count = 5 
+            row_count = 3
+        else 
+            row_count = row_count + 1
+        end if
+    else
+        clk_count = clk_count + 1
+    end if
+end while
+
+//process pour allumer une rangee bien précise de la matrice de led 
+liste de sensibilité : row_count
+row = off toutes les lignes
+row(row_count) = on
+switch (row_count) :
+    case 3 : 
+            colg = colg3
+            colr = colr3
+            if playerCol = row_count 
+                colg(playerRow) = on
+                colr(playerRow) = on
+            end if
+    end case 
+    case 4 : 
+            colg = colg4
+            colr = colr4
+            if playerCol = row_count 
+                colg(playerRow) = on
+                colr(playerRow) = on
+            end if
+    end case
+    case 5 : 
+            colg = colg5
+            colr = colr5
+            if playerCol = row_count 
+                colg(playerRow) = on
+                colr(playerRow) = on
+            end if
+    end case
+end switch
+
+//process pour reagir a l'utilisation d'un bouton en cours), winner: entier (verifier si qqn gagne), countTurn: integer(compter le nombre de jetons placés.)
+liste de sensibilité : clk 
+if clk = 1 and clk'last_value = 0
+    if winner = 1 
+        countTurn = 9 //remettre le plateau de jeu a zero
+        impulsion dans compteur1
+    else if winner = 2
+        countTurn = 9 //remettre le plateau de jeu a zero
+        impulsion dans compteur2
+    end if 
+    if player1 a gagné 
+        winner = 1
+    else if player 2 a gagné 
+        winner = 2
+    else 
+        winner = 0
+    end if
+
+    if click sur le bouton play 
+        switch (playerCol)
+            case 3 : 
+                if case pas encore jouée
+                    if player = 2
+                        colg3(playerRow) = on
+                        turn = false 
+                    else if player = 1
+                        colg3(playerRow) = on
+                        turn = false
+                    end if
+                end if 
+            end case 
+            case 4 : 
+                if case pas encore jouée
+                    if player = 2
+                        colg4(playerRow) = on
+                        turn = false 
+                    else if player = 1
+                        colg4(playerRow) = on
+                        turn = false
+                    end if
+                end if 
+            end case 
+            case 5 : 
+                if case pas encore jouée
+                    if player = 2
+                        colg5(playerRow) = on
+                        turn = false 
+                    else if player = 1
+                        colg5(playerRow) = on
+                        turn = false
+                    end if
+                end if 
+            end case
+        end switch
+        if turn = false 
+            countTurn = countTurn + 1;
+            if player = 1 
+                player = 2
+            else if player = 2
+                player = 1
+            end if 
+        end if 
+    end if 
+
+    if click sur le bouton rst or countTurn = 9
+        colr3 = off
+        colr4 = off
+        colr5 = off
+        colg3 = off
+        colg4 = off
+        colg5 = off
+        playerRow = 3
+        playerCol = 4
+        countTurn = 0
+
+    else if click sur le bouton hor 
+        if playerCol = 5
+            playerCol = 3
+        else 
+            playerCol = playerCol + 1;
+        end if
+    
+    else if click sur le bouton ver 
+        if playerRow = 4
+            playerRow = 2
+        else 
+            playerRow = playerRow + 1;
+        end if
+    
+    end if
+
+    //process pour allumer la led correspondante au joueur qui joue
+    if player = 1
+        green_led = off
+        red_led = on
+    else if player = 2
+        green_led = on
+        red_led = off 
+    end if 
