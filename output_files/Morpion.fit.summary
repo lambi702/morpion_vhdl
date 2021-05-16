@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sat May 15 21:52:33 2021
+Fitter Status : Successful - Sun May 16 09:03:46 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Morpion
 Top-level Entity Name : morpion
 Family : MAX V
 Device : 5M160ZE64C4
 Timing Models : Final
-Total logic elements : 137 / 160 ( 86 % )
+Total logic elements : 138 / 160 ( 86 % )
 Total pins : 26 / 54 ( 48 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

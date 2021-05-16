@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Morpion
-Sat May 15 21:52:24 2021
+Sun May 16 09:03:42 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -45,12 +45,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat May 15 21:52:24 2021       ;
+; Analysis & Synthesis Status ; Successful - Sun May 16 09:03:42 2021       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; Morpion                                     ;
 ; Top-level Entity Name       ; morpion                                     ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 141                                         ;
+; Total logic elements        ; 142                                         ;
 ; Total pins                  ; 26                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -158,20 +158,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 141   ;
-;     -- Combinational with no register       ; 98    ;
+; Total logic elements                        ; 142   ;
+;     -- Combinational with no register       ; 99    ;
 ;     -- Register only                        ; 4     ;
 ;     -- Combinational with a register        ; 39    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 86    ;
-;     -- 3 input functions                    ; 26    ;
+;     -- 3 input functions                    ; 27    ;
 ;     -- 2 input functions                    ; 24    ;
 ;     -- 1 input functions                    ; 1     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 141   ;
+;     -- normal mode                          ; 142   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -182,7 +182,7 @@ https://fpgasoftware.intel.com/eula.
 ; I/O pins                                    ; 26    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 43    ;
-; Total fan-out                               ; 553   ;
+; Total fan-out                               ; 556   ;
 ; Average fan-out                             ; 3.31  ;
 +---------------------------------------------+-------+
 
@@ -192,7 +192,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |morpion                   ; 141 (141)   ; 43           ; 0          ; 26   ; 0            ; 98 (98)      ; 4 (4)             ; 39 (39)          ; 0 (0)           ; 0 (0)      ; |morpion            ; morpion     ; work         ;
+; |morpion                   ; 142 (142)   ; 43           ; 0          ; 26   ; 0            ; 99 (99)      ; 4 (4)             ; 39 (39)          ; 0 (0)           ; 0 (0)      ; |morpion            ; morpion     ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -296,7 +296,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat May 15 21:52:06 2021
+    Info: Processing started: Sun May 16 09:03:25 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Morpion -c Morpion
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -304,38 +304,38 @@ Info (12021): Found 2 design units, including 1 entities, in source file morpion
     Info (12022): Found design unit 1: morpion-rtl File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 25
     Info (12023): Found entity 1: morpion File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 5
 Info (12127): Elaborating entity "Morpion" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(70): signal "colr3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 70
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(71): signal "colg3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 71
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(72): signal "playerCol" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 72
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(73): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 73
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(74): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 74
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(77): signal "colr4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 77
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(78): signal "colg4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 78
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(79): signal "playerCol" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 79
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(80): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 80
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(81): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 81
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(84): signal "colr5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 84
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(85): signal "colg5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 85
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(86): signal "playerCol" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 86
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(87): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 87
-Warning (10492): VHDL Process Statement warning at Morpion.vhd(88): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 88
-Warning (10631): VHDL Process Statement warning at Morpion.vhd(226): inferring latch(es) for signal or variable "green_led", which holds its previous value in one or more paths through the process File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 226
-Warning (10631): VHDL Process Statement warning at Morpion.vhd(226): inferring latch(es) for signal or variable "red_led", which holds its previous value in one or more paths through the process File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 226
-Info (10041): Inferred latch for "red_led" at Morpion.vhd(226) File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 226
-Info (10041): Inferred latch for "green_led" at Morpion.vhd(226) File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 226
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(68): signal "colr3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(69): signal "colg3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 69
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(70): signal "playerCol" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(71): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(72): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(75): signal "colr4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 75
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(76): signal "colg4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 76
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(77): signal "playerCol" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 77
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(78): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 78
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(79): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 79
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(82): signal "colr5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(83): signal "colg5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(84): signal "playerCol" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 84
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(85): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 85
+Warning (10492): VHDL Process Statement warning at Morpion.vhd(86): signal "playerRow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 86
+Warning (10631): VHDL Process Statement warning at Morpion.vhd(217): inferring latch(es) for signal or variable "green_led", which holds its previous value in one or more paths through the process File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 217
+Warning (10631): VHDL Process Statement warning at Morpion.vhd(217): inferring latch(es) for signal or variable "red_led", which holds its previous value in one or more paths through the process File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 217
+Info (10041): Inferred latch for "red_led" at Morpion.vhd(217) File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 217
+Info (10041): Inferred latch for "green_led" at Morpion.vhd(217) File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 217
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "row[7]" is stuck at GND File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 17
     Warning (13410): Pin "row[6]" is stuck at GND File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 17
     Warning (13410): Pin "row[2]" is stuck at GND File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 17
     Warning (13410): Pin "row[1]" is stuck at GND File: D:/OneDrive/Documents/Inge_bac_2/Digital Elec/Projet/Morpion/Morpion.vhd Line: 17
-Info (21057): Implemented 167 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 168 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 21 output pins
-    Info (21061): Implemented 141 logic cells
+    Info (21061): Implemented 142 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4756 megabytes
-    Info: Processing ended: Sat May 15 21:52:24 2021
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 4757 megabytes
+    Info: Processing ended: Sun May 16 09:03:42 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:44
 
 
